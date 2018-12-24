@@ -9,10 +9,21 @@ public abstract class Constants {
 		Special
 	}
 	public enum ClanType{
+		JiangHu,
 		WuDang,
 		ShaoLin
 	}
-	public Constants() {
+	public enum WG_Special{
+		BounceBack,
+		CounterAttack,
+		SpeedChange,
+		SpeedLimit,
+		DOT,
+		Critical,
+		SureHit,
+		DefenseBreak
 	}
-
+	public static final int NUM_ATTRIBUTE = 6;
+	public static final int NUM_WGType = 10;
+	public static final int NUM_TIANYUAN=6;
 }
