@@ -2,9 +2,11 @@ package main.java;
 
 import main.java.Constants.ClanType;
 import main.java.Constants.WGType;
+import main.java.Constants.WPType;
 
 public class AttackWG extends WuGong {
-	
+
+	protected WPType Weapon;//使用什么武器释放
 	protected float range;
 	protected float damage;
 	
