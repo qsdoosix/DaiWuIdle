@@ -2,6 +2,7 @@ package main.java;
 
 import main.java.Constants.ClanType;
 import main.java.Constants.WGType;
+import main.java.Constants.WG_Special;
 import main.java.Constants.WPType;
 
 public class AttackWG extends WuGong {
@@ -10,8 +11,8 @@ public class AttackWG extends WuGong {
 	protected float range;
 	protected float damage;
 	
-	public AttackWG(String nam, char lvl, short dif, WGType typ, ClanType cla, short cos,short cd,float rng,float dmg) {
-		super(nam, lvl, dif, typ, cla, cos, cd);
+	public AttackWG(short i,String n, short lv, short dif, WGType WT, ClanType CT, WG_Special[] SP,short[][] sv, short[] cos, short cd, short ct, short[] br, short[] mr, short[] eb, float rng, float dmg) {
+		super(i,n, lv, dif, WT, CT, SP,sv, cos,  ct,  br,  mr,  eb);
 		range=rng;
 		damage=dmg;
 	}
@@ -21,5 +22,4 @@ public class AttackWG extends WuGong {
 	public float getdamage() {
 		return damage;
 	}
-
 }
